@@ -3,19 +3,3 @@ build:
     web: Dockerfile
   run:
     web: node index.js
-
-
-# setup:
-#   addons:
-#     - plan: heroku-postgresql
-#       as: DATABASE
-#   build:
-#     docker:
-#       web: Dockerfile
-#       worker: worker/Dockerfile
-#   release:
-#     command:
-#       - ./deployment-tasks.sh
-#       image: worker
-#   run:
-#     web: node index.js
